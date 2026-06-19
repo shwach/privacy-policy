@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Idle Archmage: Wizard RPG</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         line-height: 1.65; color: #222; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  h2 { font-size: 1.2rem; margin-top: 32px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+  .updated { color: #888; font-size: 0.9rem; margin-bottom: 24px; }
+  a { color: #4a4ad8; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { background: #f4f4f6; padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Idle Archmage: Wizard RPG &middot; Last updated: June 20, 2026</p>
+
+<p>This Privacy Policy explains how <strong>Idle Archmage: Wizard RPG</strong> ("the App", "we", "us")
+handles information when you use the App. We are committed to protecting your privacy. The App is an
+offline-first idle game and does not require you to create an account or provide any personal details
+such as your name, email address, or phone number to play.</p>
+
+<h2>1. Information We Collect</h2>
+<p>We do not ask you for personally identifiable information. The App and the third-party services it
+uses may, however, process the following:</p>
+<ul>
+  <li><strong>Game progress &amp; settings</strong> — your save data (level, resources, progress, options)
+      is stored locally on your device.</li>
+  <li><strong>Optional cloud backup</strong> — if you use the in-app backup feature, your save data is
+      uploaded to our cloud database (Google Firebase) and associated with a randomly generated recovery
+      code. This code is not linked to your identity.</li>
+  <li><strong>Optional leaderboard</strong> — if you submit a score, the display name you choose and your
+      game statistics are stored to show online rankings. You may use any name you like.</li>
+  <li><strong>Anonymous identifier</strong> — to enable cloud backup and leaderboards we use Firebase
+      Anonymous Authentication, which assigns a random anonymous ID. It does not reveal your identity.</li>
+  <li><strong>Advertising data</strong> — to display ads we use Google AdMob, which may collect a device
+      advertising identifier (IDFA/IDFA equivalents), approximate location, and usage/diagnostic data.</li>
+  <li><strong>Diagnostics</strong> — anonymized crash and performance data may be collected to keep the
+      App stable.</li>
+</ul>
+
+<h2>2. Advertising &amp; Tracking (Apple ATT)</h2>
+<p>The App shows ads through <strong>Google AdMob</strong>. On iOS, before any tracking for personalized
+advertising occurs, the App presents Apple's <em>App Tracking Transparency</em> (ATT) prompt asking for
+your permission.</p>
+<ul>
+  <li>If you <strong>allow</strong> tracking, AdMob may use your advertising identifier to show
+      personalized ads.</li>
+  <li>If you <strong>do not allow</strong> tracking, you will still see ads, but they will be
+      non-personalized. The game remains fully playable either way.</li>
+</ul>
+<p>You can change this choice at any time in <code>Settings &rarr; Privacy &amp; Security &rarr; Tracking</code>
+on your device.</p>
+
+<h2>3. How We Use Information</h2>
+<ul>
+  <li>To save, restore, and synchronize your game progress.</li>
+  <li>To display optional online leaderboards.</li>
+  <li>To display advertisements and support the App.</li>
+  <li>To diagnose crashes and improve performance and stability.</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+<p>We rely on the following third-party services, each governed by its own privacy policy:</p>
+<ul>
+  <li><strong>Google AdMob</strong> —
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+  <li><strong>Google Firebase</strong> (Authentication, Firestore) —
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+  <li><strong>Apple App Store</strong> —
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+
+<h2>5. Data Retention &amp; Deletion</h2>
+<p>Local save data remains on your device until you delete the App. Cloud backup and leaderboard data
+remain on our servers until removed. Because the data is not tied to your personal identity, you can
+request deletion of your cloud-stored data by contacting us with your recovery code or leaderboard
+display name (see Section 8).</p>
+
+<h2>6. Children's Privacy</h2>
+<p>The App is not directed at children under the age of 13 (or the equivalent minimum age in your
+jurisdiction), and we do not knowingly collect personal information from children. If you believe a
+child has provided us with information, please contact us so we can remove it.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an
+updated "Last updated" date. Continued use of the App after changes constitutes acceptance of the
+revised policy.</p>
+
+<h2>8. Contact Us</h2>
+<p>If you have any questions about this Privacy Policy or wish to request deletion of your data, contact:</p>
+<p><a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+
+</body>
+</html>
