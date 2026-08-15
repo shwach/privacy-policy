@@ -1,124 +1,493 @@
-개인정보처리방침 / Privacy Policy
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>제4지사 개인정보처리방침</title>
+<style>
+  /* ── 토큰 ────────────────────────────────────────────────
+     밝은 쪽이 기본. 어두운 쪽은 토큰만 다시 정의합니다. */
+  :root {
+    --ground: #f2f0e9;
+    --panel: #fbfaf6;
+    --ink: #1c1b18;
+    --ink-2: #55524b;
+    --ink-3: #86827a;
+    --edge: #ddd8ca;
+    --edge-2: #c9c3b1;
+    --accent: #7a5f22;
+    --accent-soft: rgba(122, 95, 34, 0.1);
 
-제4지사 · Branch 4
-최종 수정일 / Last updated: 2026-08-15
+    --f-body: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+      -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --f-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  }
 
-────────────────────────────────────────────────────────────
-한국어
-────────────────────────────────────────────────────────────
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0d0d10;
+      --panel: #15151a;
+      --ink: #e9e6e0;
+      --ink-2: #a8a49d;
+      --ink-3: #7b7770;
+      --edge: #26262d;
+      --edge-2: #35353e;
+      --accent: #ecdcae;
+      --accent-soft: rgba(236, 220, 174, 0.09);
+    }
+  }
 
-제4지사(이하 "본 앱")는 이용자의 개인정보를 소중히 다룹니다.
-본 방침은 본 앱이 어떤 정보를 다루는지 설명합니다.
+  :root[data-theme="dark"] {
+    --ground: #0d0d10;
+    --panel: #15151a;
+    --ink: #e9e6e0;
+    --ink-2: #a8a49d;
+    --ink-3: #7b7770;
+    --edge: #26262d;
+    --edge-2: #35353e;
+    --accent: #ecdcae;
+    --accent-soft: rgba(236, 220, 174, 0.09);
+  }
 
-1. 수집하지 않는 정보
+  * { box-sizing: border-box; }
 
-본 앱은 회원가입이나 로그인을 요구하지 않습니다. 이름, 이메일 주소,
-전화번호, 위치 등 이용자를 식별할 수 있는 정보를 직접 수집하거나
-서버로 전송하지 않습니다.
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
 
-2. 기기에만 저장되는 정보
+  .sheet {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: clamp(24px, 5vw, 64px) clamp(20px, 5vw, 48px) 96px;
+  }
 
-게임 진행 상황(주차, 직원, 예산, 설정 등)은 이용자의 기기 안에만
-저장됩니다. 외부로 전송되지 않으며, 앱을 삭제하면 함께 지워집니다.
-본 앱은 이 정보에 접근할 수 있는 서버를 운영하지 않습니다.
+  /* ── 문서 머리 ───────────────────────────────────────── */
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 26px;
+    border-bottom: 2px solid var(--ink);
+  }
 
-3. 광고
+  .issuer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    color: var(--ink-3);
+    text-transform: uppercase;
+  }
 
-본 앱은 보상형 광고를 제공하기 위해 Google AdMob을 사용합니다.
-이용자가 광고 보기를 선택했을 때에만 광고가 재생됩니다.
+  h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
 
-AdMob은 광고를 제공하는 과정에서 광고 식별자(IDFA), 기기 정보,
-대략적인 위치 등을 수집할 수 있습니다. 이는 Google이 수집·처리하며,
-본 앱은 해당 정보를 열람하거나 보관하지 않습니다.
+  h1 span {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    color: var(--ink-3);
+    text-transform: uppercase;
+  }
 
-Google의 처리 방침: https://policies.google.com/technologies/partner-sites
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 28px;
+    font-family: var(--f-mono);
+    font-size: 0.78rem;
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
 
-4. 추적 동의
+  .meta b {
+    color: var(--ink-3);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
 
-iOS에서는 광고를 처음 재생하기 전에 추적 허용 여부를 여쭙니다.
-허용하지 않으셔도 광고 시청과 보상 수령에는 아무 지장이 없으며,
-개인 맞춤이 아닌 광고가 제공됩니다.
+  /* ── 언어 전환 ───────────────────────────────────────── */
+  .langs {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    gap: 2px;
+    margin: 0 -4px 40px;
+    padding: 14px 4px;
+    background: var(--ground);
+  }
 
-동의는 언제든지 기기의 설정 > 개인정보 보호 및 보안 > 추적에서
-변경하실 수 있습니다.
+  .langs button {
+    flex: 0 0 auto;
+    padding: 7px 16px;
+    border: 1px solid var(--edge-2);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink-2);
+    font: inherit;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
 
-5. 알림
+  .langs button + button { margin-left: 6px; }
 
-본 앱은 주간 업무 종료 등을 알리기 위해 기기 알림을 사용할 수 있습니다.
-알림은 기기 안에서 예약되고 표시되며, 외부로 전송되는 정보는 없습니다.
-알림은 기기 설정에서 끄실 수 있습니다.
+  .langs button:hover { color: var(--ink); }
 
-6. 아동
+  .langs button[aria-pressed="true"] {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
 
-본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를
-알면서 수집하지 않습니다.
+  .langs button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
 
-7. 방침 변경
+  /* ── 본문 ────────────────────────────────────────────── */
+  .lead {
+    margin: 0 0 40px;
+    padding: 18px 20px;
+    border-left: 2px solid var(--accent);
+    background: var(--accent-soft);
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
 
-본 방침이 변경되면 이 페이지에 수정된 내용과 날짜를 게시합니다.
+  section.clause {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0 12px;
+    margin-bottom: 34px;
+  }
 
-8. 문의
+  section.clause > .no {
+    font-family: var(--f-mono);
+    font-size: 0.8rem;
+    line-height: 2.1;
+    color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
+  }
 
-doggguggu@gmail.com
+  section.clause > h2 {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
 
-────────────────────────────────────────────────────────────
-English
-────────────────────────────────────────────────────────────
+  section.clause > p,
+  section.clause > ul {
+    grid-column: 2;
+    margin: 0 0 12px;
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
 
-Branch 4 (the "App") respects your privacy. This policy explains what
-information the App handles.
+  section.clause > p:last-child,
+  section.clause > ul:last-child { margin-bottom: 0; }
 
-1. Information we do not collect
+  ul { padding-left: 1.1em; }
+  li { margin-bottom: 6px; }
 
-The App does not require an account or sign-in. It does not collect or
-transmit personally identifiable information such as your name, email
-address, phone number, or location.
+  a {
+    color: var(--accent);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    word-break: break-all;
+  }
 
-2. Information stored on your device only
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 
-Your game progress (week, staff, budget, settings) is stored solely on
-your device. It is never transmitted elsewhere and is removed when you
-delete the App. No server operated for this App can access it.
+  /* ── 문의 ────────────────────────────────────────────── */
+  .contact {
+    margin-top: 48px;
+    padding: 22px 24px;
+    border: 1px solid var(--edge);
+    border-radius: 4px;
+    background: var(--panel);
+  }
 
-3. Advertising
+  .contact p {
+    margin: 0 0 8px;
+    color: var(--ink-2);
+    font-size: 0.9rem;
+  }
 
-The App uses Google AdMob to serve rewarded ads. Ads play only when you
-choose to watch one.
+  .contact a {
+    font-family: var(--f-mono);
+    font-size: 1rem;
+  }
 
-In the course of serving ads, AdMob may collect your advertising
-identifier (IDFA), device information, and approximate location. This is
-collected and processed by Google. The App does not read or retain that
-information.
+  .foot {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 1px solid var(--edge);
+    font-family: var(--f-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+  }
 
-Google's practices: https://policies.google.com/technologies/partner-sites
+  [hidden] { display: none !important; }
 
-4. Tracking consent
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
 
-On iOS, you are asked for tracking permission before the first ad plays.
-Declining does not affect your ability to watch ads or receive rewards;
-you will simply be shown non-personalised ads.
+<div class="sheet">
+  <header class="head">
+    <div class="issuer">
+      <span>던전시설관리공단 제4지사</span>
+      <span>Branch 4</span>
+    </div>
+    <h1>
+      개인정보처리방침
+      <span>Privacy Policy</span>
+    </h1>
+    <div class="meta">
+      <span><b>앱 / APP</b> 제4지사 · Branch 4</span>
+      <span><b>시행 / UPDATED</b> 2026-08-15</span>
+    </div>
+  </header>
 
-You may change this at any time in Settings > Privacy & Security >
-Tracking on your device.
+  <nav class="langs" aria-label="언어 선택">
+    <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </nav>
 
-5. Notifications
+  <!-- ── 한국어 ─────────────────────────────────────────── -->
+  <div id="ko">
+    <p class="lead">
+      제4지사(이하 &ldquo;본 앱&rdquo;)는 이용자의 개인정보를 소중히 다룹니다.
+      본 방침은 본 앱이 어떤 정보를 다루는지 설명합니다.
+    </p>
 
-The App may use device notifications to tell you when a week has ended.
-Notifications are scheduled and shown on your device; no information is
-sent anywhere.
+    <section class="clause">
+      <span class="no">01</span>
+      <h2>수집하지 않는 정보</h2>
+      <p>
+        본 앱은 회원가입이나 로그인을 요구하지 않습니다. 이름, 이메일 주소,
+        전화번호, 위치 등 이용자를 식별할 수 있는 정보를 직접 수집하거나
+        서버로 전송하지 않습니다.
+      </p>
+    </section>
 
-You can turn notifications off in your device settings.
+    <section class="clause">
+      <span class="no">02</span>
+      <h2>기기에만 저장되는 정보</h2>
+      <p>
+        게임 진행 상황(주차, 직원, 예산, 설정 등)은 이용자의 기기 안에만
+        저장됩니다. 외부로 전송되지 않으며, 앱을 삭제하면 함께 지워집니다.
+        본 앱은 이 정보에 접근할 수 있는 서버를 운영하지 않습니다.
+      </p>
+    </section>
 
-6. Children
+    <section class="clause">
+      <span class="no">03</span>
+      <h2>광고</h2>
+      <p>
+        본 앱은 보상형 광고를 제공하기 위해 Google AdMob을 사용합니다.
+        이용자가 광고 보기를 선택했을 때에만 광고가 재생됩니다.
+      </p>
+      <p>
+        AdMob은 광고를 제공하는 과정에서 광고 식별자(IDFA), 기기 정보,
+        대략적인 위치 등을 수집할 수 있습니다. 이는 Google이 수집하고
+        처리하며, 본 앱은 해당 정보를 열람하거나 보관하지 않습니다.
+      </p>
+      <p>
+        Google의 처리 방침:
+        <a href="https://policies.google.com/technologies/partner-sites">
+          policies.google.com/technologies/partner-sites</a>
+      </p>
+    </section>
 
-The App is not directed at children under 14, and we do not knowingly
-collect personal information from children.
+    <section class="clause">
+      <span class="no">04</span>
+      <h2>추적 동의</h2>
+      <p>
+        iOS에서는 광고를 처음 재생하기 전에 추적 허용 여부를 여쭙니다.
+        허용하지 않으셔도 광고 시청과 보상 수령에는 아무 지장이 없으며,
+        개인 맞춤이 아닌 광고가 제공됩니다.
+      </p>
+      <p>
+        동의는 언제든지 기기의 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서
+        변경하실 수 있습니다.
+      </p>
+    </section>
 
-7. Changes to this policy
+    <section class="clause">
+      <span class="no">05</span>
+      <h2>알림</h2>
+      <p>
+        본 앱은 주간 업무 종료 등을 알리기 위해 기기 알림을 사용할 수 있습니다.
+        알림은 기기 안에서 예약되고 표시되며, 외부로 전송되는 정보는 없습니다.
+        알림은 기기 설정에서 끄실 수 있습니다.
+      </p>
+    </section>
 
-If this policy changes, the revised version and its date will be posted
-on this page.
+    <section class="clause">
+      <span class="no">06</span>
+      <h2>아동</h2>
+      <p>
+        본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를
+        알면서 수집하지 않습니다.
+      </p>
+    </section>
 
-8. Contact
+    <section class="clause">
+      <span class="no">07</span>
+      <h2>방침 변경</h2>
+      <p>
+        본 방침이 변경되면 이 페이지에 수정된 내용과 날짜를 게시합니다.
+      </p>
+    </section>
 
-doggguggu@gmail.com
+    <div class="contact">
+      <p>개인정보 처리에 관한 문의</p>
+      <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- ── English ────────────────────────────────────────── -->
+  <div id="en" hidden>
+    <p class="lead">
+      Branch 4 (the &ldquo;App&rdquo;) respects your privacy. This policy
+      explains what information the App handles.
+    </p>
+
+    <section class="clause">
+      <span class="no">01</span>
+      <h2>Information we do not collect</h2>
+      <p>
+        The App does not require an account or sign-in. It does not collect or
+        transmit personally identifiable information such as your name, email
+        address, phone number, or location.
+      </p>
+    </section>
+
+    <section class="clause">
+      <span class="no">02</span>
+      <h2>Information stored on your device only</h2>
+      <p>
+        Your game progress (week, staff, budget, settings) is stored solely on
+        your device. It is never transmitted elsewhere and is removed when you
+        delete the App. No server operated for this App can access it.
+      </p>
+    </section>
+
+    <section class="clause">
+      <span class="no">03</span>
+      <h2>Advertising</h2>
+      <p>
+        The App uses Google AdMob to serve rewarded ads. Ads play only when you
+        choose to watch one.
+      </p>
+      <p>
+        In the course of serving ads, AdMob may collect your advertising
+        identifier (IDFA), device information, and approximate location. This
+        is collected and processed by Google. The App does not read or retain
+        that information.
+      </p>
+      <p>
+        Google&rsquo;s practices:
+        <a href="https://policies.google.com/technologies/partner-sites">
+          policies.google.com/technologies/partner-sites</a>
+      </p>
+    </section>
+
+    <section class="clause">
+      <span class="no">04</span>
+      <h2>Tracking consent</h2>
+      <p>
+        On iOS, you are asked for tracking permission before the first ad
+        plays. Declining does not affect your ability to watch ads or receive
+        rewards; you will simply be shown non-personalised ads.
+      </p>
+      <p>
+        You may change this at any time in Settings &gt; Privacy &amp; Security
+        &gt; Tracking on your device.
+      </p>
+    </section>
+
+    <section class="clause">
+      <span class="no">05</span>
+      <h2>Notifications</h2>
+      <p>
+        The App may use device notifications to tell you when a week has ended.
+        Notifications are scheduled and shown on your device; no information is
+        sent anywhere. You can turn notifications off in your device settings.
+      </p>
+    </section>
+
+    <section class="clause">
+      <span class="no">06</span>
+      <h2>Children</h2>
+      <p>
+        The App is not directed at children under 14, and we do not knowingly
+        collect personal information from children.
+      </p>
+    </section>
+
+    <section class="clause">
+      <span class="no">07</span>
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes, the revised version and its date will be posted
+        on this page.
+      </p>
+    </section>
+
+    <div class="contact">
+      <p>Questions about this policy</p>
+      <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a>
+    </div>
+  </div>
+
+  <p class="foot">제4지사 · BRANCH 4 — 2026-08-15</p>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.langs button');
+  const panes = { ko: document.getElementById('ko'), en: document.getElementById('en') };
+
+  function show(lang) {
+    for (const [id, el] of Object.entries(panes)) el.hidden = id !== lang;
+    for (const b of buttons) b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    document.documentElement.lang = lang;
+  }
+
+  for (const b of buttons) b.addEventListener('click', () => show(b.dataset.lang));
+
+  // 기기 언어가 한국어가 아니면 영어부터 보여 줍니다
+  if (!(navigator.language || '').toLowerCase().startsWith('ko')) show('en');
+</script>
+</body>
+</html>
