@@ -260,23 +260,38 @@
 
   <!-- 한국어 -->
   <article class="doc" id="doc-ko" role="tabpanel" aria-labelledby="tab-ko" tabindex="0">
-    <p class="lead">이 문서는 모바일 게임 「4분할 원정대」(이하 “게임”)의 개인정보처리방침입니다. 게임의 개발자(이하 “개발자”)는 이용자의 개인정보를 수집하지 않습니다.</p>
+    <p class="lead">이 문서는 모바일 게임 「4분할 원정대」(이하 “게임”)의 개인정보처리방침입니다. 게임의 개발자(이하 “개발자”)는 이용자의 개인정보를 수집하지 않습니다. 다만 이용자가 직접 선택하신 경우에 한해, 레이드 순위표에 닉네임과 기록만 전송됩니다(아래 3항).</p>
 
     <section>
       <div class="num">01</div>
       <h2>수집하지 않는 정보</h2>
-      <p>개발자는 이름, 이메일 주소, 전화번호, 주소, 생년월일, 결제 정보 등 이용자를 식별할 수 있는 어떠한 개인정보도 수집하거나 저장하지 않습니다. 게임을 이용하기 위한 회원가입이나 로그인 절차가 없습니다.</p>
+      <p>개발자는 이름, 이메일 주소, 전화번호, 주소, 생년월일, 결제 정보 등 이용자를 식별할 수 있는 어떠한 개인정보도 수집하거나 저장하지 않습니다. 게임을 이용하기 위한 회원가입이나 로그인 절차가 없습니다. 아래 3항의 순위표를 이용하실 때에도 이용자가 입력하신 닉네임 외에 개인정보는 필요하지 않습니다.</p>
     </section>
 
     <section>
       <div class="num">02</div>
       <h2>기기 안에만 저장되는 정보</h2>
       <p>게임 진행 상황(영웅의 성장, 골드·보석·재료 보유량, 던전 진행도, 소리 설정 등)은 이용자의 기기 안에만 저장됩니다.</p>
-      <p>게임 균형을 다듬기 위한 진행 기록(층 클리어, 장비 강화, 보상 광고 시청 여부 등)도 최대 100건까지 기기 안에만 보관되며 외부로 전송되지 않습니다. 이 기록에는 이용자를 식별할 수 있는 내용이 들어가지 않습니다.</p>
+      <p>게임 균형을 다듬기 위한 진행 기록(층 클리어, 장비 강화, 보상 광고 시청 여부 등)도 최대 100건까지 기기 안에만 보관되며 외부로 전송되지 않습니다. 이 기록에는 이용자를 식별할 수 있는 내용이 들어가지 않습니다. 이용자가 순위표에 직접 올리신 기록(3항)만이 예외적으로 기기 밖으로 전송됩니다.</p>
     </section>
 
     <section>
       <div class="num">03</div>
+      <h2>레이드 주간 순위 (선택 사항)</h2>
+      <p>게임에는 주간 레이드 보스 기록을 겨루는 순위표가 있습니다. 순위표는 <strong>이용자가 닉네임을 입력하고 “기록 올리기”를 직접 누르셨을 때에만</strong> 동작합니다. 누르지 않으시면 어떤 정보도 전송되지 않으며, 게임의 다른 기능은 그대로 이용하실 수 있습니다.</p>
+      <p>기록을 올리실 때 전송되는 항목은 다음이 전부입니다.</p>
+      <ul>
+        <li>이용자가 직접 입력한 닉네임 (최대 12자) — 실명을 쓰지 않으셔도 됩니다</li>
+        <li>레이드 단계·층수·격파에 걸린 시간</li>
+        <li>기록을 올린 시각</li>
+        <li>기기마다 자동으로 만들어지는 익명 식별자 — 회원가입 없이 발급되며 이름·이메일 등과 연결되지 않습니다</li>
+      </ul>
+      <p>이 정보는 Google의 Firebase(Authentication, Cloud Firestore)에 저장되며, 다른 이용자에게는 닉네임과 기록만 공개됩니다. 순위는 매주 초기화됩니다.</p>
+      <p>Firebase 개인정보처리방침: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+    </section>
+
+    <section>
+      <div class="num">04</div>
       <h2>광고</h2>
       <p>게임에는 이용자가 직접 선택해서 보는 보상형 광고만 있으며, 강제 전면광고나 배너 광고는 없습니다. 광고는 Google의 AdMob을 통해 제공됩니다.</p>
       <p>광고를 제공하고 성과를 측정하는 과정에서 Google 및 그 파트너는 광고 식별자(IDFA), 기기 정보, 대략적인 위치, 광고 조회 및 클릭 기록 등을 수집·이용할 수 있습니다. 이 처리는 Google의 정책을 따릅니다.</p>
@@ -287,45 +302,46 @@
     </section>
 
     <section>
-      <div class="num">04</div>
+      <div class="num">05</div>
       <h2>추적 권한과 광고 개인화</h2>
       <p>iOS에서 게임은 처음 광고를 볼 때 앱 추적 권한을 요청할 수 있습니다. 허용하지 않으시면 개인화되지 않은 광고만 요청합니다. 이 선택은 기기의 <em>설정 → 개인정보 보호 및 보안 → 추적</em>에서 언제든지 바꾸실 수 있습니다.</p>
       <p>동의가 필요한 지역에서는 Google의 동의 관리 화면이 표시되며, 동의하지 않으시면 광고가 제공되지 않습니다.</p>
     </section>
 
     <section>
-      <div class="num">05</div>
+      <div class="num">06</div>
       <h2>아동의 개인정보</h2>
       <p>게임은 만 13세 미만 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다. 광고 콘텐츠 등급은 청소년 이용가 이하로 제한하여 요청합니다.</p>
     </section>
 
     <section>
-      <div class="num">06</div>
-      <h2>제3자 제공</h2>
-      <p>개발자는 이용자의 정보를 판매하거나 제3자에게 제공하지 않습니다. 위 3항의 광고 사업자를 제외하면 정보를 공유하는 곳이 없습니다.</p>
-    </section>
-
-    <section>
       <div class="num">07</div>
-      <h2>보관과 삭제</h2>
-      <p>기기 안의 게임 데이터는 이용자가 삭제하기 전까지 보관됩니다. 게임 설정에서 진행을 초기화하시거나 기기에서 앱을 삭제하시면 저장된 데이터도 함께 삭제됩니다.</p>
-      <p>세이브 파일을 내보내기 하신 경우, 그 파일은 이용자가 직접 보관하고 관리하시는 파일입니다.</p>
+      <h2>제3자 제공</h2>
+      <p>개발자는 이용자의 정보를 판매하거나 제3자에게 제공하지 않습니다. 위 4항의 광고 사업자(Google AdMob)와, 순위표를 저장·운영하기 위한 Google Firebase를 제외하면 정보를 공유하는 곳이 없습니다. 두 곳 모두 개발자를 대신해 처리만 수행합니다.</p>
     </section>
 
     <section>
       <div class="num">08</div>
-      <h2>이용자의 권리</h2>
-      <p>개발자가 개인정보를 보관하지 않으므로 별도의 열람·정정·삭제 요청 절차는 두고 있지 않습니다. 광고와 관련해 수집되는 데이터에 대해서는 위 Google의 정책에 따라 권리를 행사하실 수 있습니다. 그 밖의 문의는 아래 이메일로 보내 주시면 확인 후 답변드립니다.</p>
+      <h2>보관과 삭제</h2>
+      <p>기기 안의 게임 데이터는 이용자가 삭제하기 전까지 보관됩니다. 게임 설정에서 진행을 초기화하시거나 기기에서 앱을 삭제하시면 저장된 데이터도 함께 삭제됩니다.</p>
+      <p>세이브 파일을 내보내기 하신 경우, 그 파일은 이용자가 직접 보관하고 관리하시는 파일입니다.</p>
+      <p>순위표에 올리신 기록은 해당 주가 끝나면 순위 집계에서 내려가며, 그 전에도 게임 안의 <em>레이드 → 이번 주 순위 → 내 기록 지우기</em> 버튼으로 언제든지 직접 삭제하실 수 있습니다. 삭제하시면 닉네임을 포함한 해당 기록이 서버에서 즉시 지워집니다.</p>
     </section>
 
     <section>
       <div class="num">09</div>
+      <h2>이용자의 권리</h2>
+      <p>순위표에 올리신 기록은 게임 안의 <em>레이드 → 이번 주 순위</em> 화면에서 직접 확인하실 수 있고, 닉네임을 다시 저장해 정정하시거나 <em>내 기록 지우기</em>로 삭제하실 수 있습니다. 순위표를 이용하지 않으시면 개발자가 보관하는 개인정보는 없습니다. 광고와 관련해 수집되는 데이터에 대해서는 위 Google의 정책에 따라 권리를 행사하실 수 있습니다. 그 밖의 문의는 아래 이메일로 보내 주시면 확인 후 답변드립니다.</p>
+    </section>
+
+    <section>
+      <div class="num">10</div>
       <h2>방침의 변경</h2>
       <p>이 방침이 바뀌는 경우 이 문서를 갱신하고 상단의 시행일을 함께 수정합니다. 중요한 변경이 있을 때에는 앱 업데이트 안내를 통해 알려 드립니다.</p>
     </section>
 
     <section>
-      <div class="num">10</div>
+      <div class="num">11</div>
       <h2>문의</h2>
       <p>개인정보처리방침에 관한 문의는 아래 이메일로 보내 주시기 바랍니다.</p>
       <p><a class="mail" href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
@@ -334,23 +350,38 @@
 
   <!-- English -->
   <article class="doc" id="doc-en" role="tabpanel" aria-labelledby="tab-en" tabindex="0" hidden>
-    <p class="lead">This is the privacy policy for the mobile game <em>Quadrant Expedition</em> (the “Game”). The developer of the Game (the “Developer”) does not collect personal information from players.</p>
+    <p class="lead">This is the privacy policy for the mobile game <em>Split Squad</em> (the “Game”). The developer of the Game (the “Developer”) does not collect personal information from players. The one exception is the raid leaderboard, which sends a nickname and a score only when you choose to submit one (see section 3).</p>
 
     <section>
       <div class="num">01</div>
       <h2>Information not collected</h2>
-      <p>The Developer does not collect or store any information that identifies you — no name, email address, phone number, postal address, date of birth, or payment details. The Game has no sign-up and no login.</p>
+      <p>The Developer does not collect or store any information that identifies you — no name, email address, phone number, postal address, date of birth, or payment details. The Game has no sign-up and no login. Even the leaderboard in section 3 needs nothing beyond the nickname you type.</p>
     </section>
 
     <section>
       <div class="num">02</div>
       <h2>Information kept only on your device</h2>
       <p>Your progress (hero growth, gold, gems and materials, dungeon depth, sound settings) is stored only on your device.</p>
-      <p>Gameplay records used for balancing the Game (floors cleared, gear upgraded, whether a rewarded ad was watched) are also kept only on your device, up to 100 entries, and are not transmitted anywhere. These records contain nothing that identifies you.</p>
+      <p>Gameplay records used for balancing the Game (floors cleared, gear upgraded, whether a rewarded ad was watched) are also kept only on your device, up to 100 entries, and are not transmitted anywhere. These records contain nothing that identifies you. The only data that ever leaves your device is a leaderboard entry you submit yourself (section 3).</p>
     </section>
 
     <section>
       <div class="num">03</div>
+      <h2>Weekly raid ranking (optional)</h2>
+      <p>The Game has a leaderboard for the weekly raid boss. It runs <strong>only if you enter a nickname and tap “Submit” yourself.</strong> If you never tap it, nothing is transmitted, and the rest of the Game works exactly the same.</p>
+      <p>When you do submit, this is everything that is sent:</p>
+      <ul>
+        <li>The nickname you typed (up to 12 characters) — it does not have to be your real name</li>
+        <li>Your raid tier, floor, and clear time</li>
+        <li>The time of submission</li>
+        <li>An anonymous identifier generated per device — issued without any sign-up and not linked to a name or email</li>
+      </ul>
+      <p>This information is stored in Google Firebase (Authentication and Cloud Firestore). Other players see only the nickname and the record. The board resets every week.</p>
+      <p>Firebase privacy information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+    </section>
+
+    <section>
+      <div class="num">04</div>
       <h2>Advertising</h2>
       <p>The Game shows only rewarded ads that you choose to watch. There are no forced interstitials and no banners. Ads are served through Google AdMob.</p>
       <p>To serve ads and measure their performance, Google and its partners may collect and use your advertising identifier (IDFA), device information, approximate location, and records of ad views and clicks. That processing is governed by Google's policies.</p>
@@ -361,45 +392,46 @@
     </section>
 
     <section>
-      <div class="num">04</div>
+      <div class="num">05</div>
       <h2>Tracking permission and ad personalization</h2>
       <p>On iOS, the Game may ask for app tracking permission the first time you watch an ad. If you decline, only non-personalized ads are requested. You can change this choice at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
       <p>Where consent is required, Google's consent form is shown; if you do not consent, ads are not served.</p>
     </section>
 
     <section>
-      <div class="num">05</div>
+      <div class="num">06</div>
       <h2>Children's privacy</h2>
       <p>The Game is not directed to children under 13, and the Developer does not knowingly collect information from children. Ad content is requested with a maximum rating of Teen.</p>
     </section>
 
     <section>
-      <div class="num">06</div>
-      <h2>Sharing with third parties</h2>
-      <p>The Developer does not sell your information or share it with third parties. Apart from the advertising provider described in section 3, nothing is shared.</p>
-    </section>
-
-    <section>
       <div class="num">07</div>
-      <h2>Retention and deletion</h2>
-      <p>Game data stays on your device until you remove it. Resetting your progress in the Game's settings, or deleting the app from your device, deletes the stored data with it.</p>
-      <p>If you export a save file, that file is yours to keep and manage.</p>
+      <h2>Sharing with third parties</h2>
+      <p>The Developer does not sell your information or share it with third parties. Apart from the advertising provider in section 4 (Google AdMob) and Google Firebase, which stores and serves the leaderboard, nothing is shared. Both act only as processors on the Developer’s behalf.</p>
     </section>
 
     <section>
       <div class="num">08</div>
-      <h2>Your rights</h2>
-      <p>Because the Developer holds no personal information, there is no separate process for access, correction, or deletion requests. For data collected in connection with advertising, you may exercise your rights under Google's policies linked above. For anything else, email the address below and you will receive a reply.</p>
+      <h2>Retention and deletion</h2>
+      <p>Game data stays on your device until you remove it. Resetting your progress in the Game's settings, or deleting the app from your device, deletes the stored data with it.</p>
+      <p>If you export a save file, that file is yours to keep and manage.</p>
+      <p>A leaderboard entry drops out of the standings when the week ends, and you can remove it yourself at any time before that with <em>Raid → This week’s ranking → Delete my record</em>. Deleting it erases that entry, nickname included, from the server immediately.</p>
     </section>
 
     <section>
       <div class="num">09</div>
+      <h2>Your rights</h2>
+      <p>You can see your leaderboard entry in the Game under <em>Raid → This week’s ranking</em>, correct it by saving a new nickname, and delete it with <em>Delete my record</em>. If you never use the leaderboard, the Developer holds no personal information about you at all. For data collected in connection with advertising, you may exercise your rights under Google's policies linked above. For anything else, email the address below and you will receive a reply.</p>
+    </section>
+
+    <section>
+      <div class="num">10</div>
       <h2>Changes to this policy</h2>
       <p>If this policy changes, this document is updated and the effective date at the top is revised. Significant changes are announced in the app's update notes.</p>
     </section>
 
     <section>
-      <div class="num">10</div>
+      <div class="num">11</div>
       <h2>Contact</h2>
       <p>Questions about this privacy policy can be sent to the address below.</p>
       <p><a class="mail" href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
@@ -408,23 +440,38 @@
 
   <!-- 日本語 -->
   <article class="doc" id="doc-ja" role="tabpanel" aria-labelledby="tab-ja" tabindex="0" hidden>
-    <p class="lead">本書は、モバイルゲーム「4分割遠征隊」（以下「本ゲーム」）のプライバシーポリシーです。本ゲームの開発者（以下「開発者」）は、利用者の個人情報を収集いたしません。</p>
+    <p class="lead">本書は、モバイルゲーム「4分割遠征隊」（以下「本ゲーム」）のプライバシーポリシーです。本ゲームの開発者（以下「開発者」）は、利用者の個人情報を収集いたしません。ただし、利用者ご自身が選択された場合に限り、レイドランキングにニックネームと記録のみが送信されます（第3項）。</p>
 
     <section>
       <div class="num">01</div>
       <h2>収集しない情報</h2>
-      <p>開発者は、氏名・メールアドレス・電話番号・住所・生年月日・決済情報など、利用者を特定できる個人情報を一切収集・保存いたしません。本ゲームの利用に会員登録やログインは必要ありません。</p>
+      <p>開発者は、氏名・メールアドレス・電話番号・住所・生年月日・決済情報など、利用者を特定できる個人情報を一切収集・保存いたしません。本ゲームの利用に会員登録やログインは必要ありません。第3項のランキングをご利用の場合も、入力されたニックネーム以外の個人情報は必要ありません。</p>
     </section>
 
     <section>
       <div class="num">02</div>
       <h2>端末内にのみ保存される情報</h2>
       <p>ゲームの進行状況（英雄の育成状況、ゴールド・ジェム・素材の所持数、ダンジョンの到達階、音の設定など）は、利用者の端末内にのみ保存されます。</p>
-      <p>ゲームバランス調整のための進行記録（階層クリア、装備強化、リワード広告の視聴有無など）も、最大100件まで端末内にのみ保管され、外部へ送信されることはありません。この記録に利用者を特定できる内容は含まれません。</p>
+      <p>ゲームバランス調整のための進行記録（階層クリア、装備強化、リワード広告の視聴有無など）も、最大100件まで端末内にのみ保管され、外部へ送信されることはありません。この記録に利用者を特定できる内容は含まれません。端末の外へ送信されるのは、利用者ご自身が送信されたランキング記録（第3項）のみです。</p>
     </section>
 
     <section>
       <div class="num">03</div>
+      <h2>週間レイドランキング（任意）</h2>
+      <p>本ゲームには、週替わりのレイドボスの記録を競うランキングがあります。ランキングは<strong>利用者ご自身がニックネームを入力し、「送信」を押された場合にのみ</strong>動作します。押されない限り情報が送信されることはなく、他の機能は通常どおりご利用いただけます。</p>
+      <p>記録を送信される際に送られる項目は、以下がすべてです。</p>
+      <ul>
+        <li>ご自身で入力されたニックネーム（最大12文字）— 実名である必要はありません</li>
+        <li>レイドの段階・階層・撃破にかかった時間</li>
+        <li>送信した日時</li>
+        <li>端末ごとに自動生成される匿名の識別子 — 会員登録なしで発行され、氏名やメールアドレスとは結び付きません</li>
+      </ul>
+      <p>これらの情報はGoogleのFirebase（Authentication、Cloud Firestore）に保存され、他の利用者に公開されるのはニックネームと記録のみです。ランキングは毎週リセットされます。</p>
+      <p>Firebaseのプライバシー情報: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+    </section>
+
+    <section>
+      <div class="num">04</div>
       <h2>広告について</h2>
       <p>本ゲームには、利用者ご自身が選んで視聴するリワード広告のみがあり、強制的な全画面広告やバナー広告はありません。広告はGoogleのAdMobを通じて配信されます。</p>
       <p>広告の配信および効果測定の過程で、Googleおよびそのパートナーは、広告識別子（IDFA）、端末情報、おおよその位置、広告の表示・クリック履歴などを収集・利用する場合があります。これらの取り扱いはGoogleの方針に従います。</p>
@@ -435,45 +482,46 @@
     </section>
 
     <section>
-      <div class="num">04</div>
+      <div class="num">05</div>
       <h2>トラッキング許可と広告のパーソナライズ</h2>
       <p>iOSでは、初めて広告を視聴される際にアプリのトラッキング許可を求める場合があります。許可されない場合は、パーソナライズされていない広告のみを要求いたします。この選択は端末の<em>設定 → プライバシーとセキュリティ → トラッキング</em>からいつでも変更いただけます。</p>
       <p>同意が必要な地域では、Googleの同意管理画面が表示されます。同意されない場合、広告は配信されません。</p>
     </section>
 
     <section>
-      <div class="num">05</div>
+      <div class="num">06</div>
       <h2>お子様の個人情報</h2>
       <p>本ゲームは13歳未満のお子様を主な対象としておらず、開発者がお子様の個人情報を故意に収集することはありません。広告コンテンツのレーティングは「ティーン」以下に制限して要求しています。</p>
     </section>
 
     <section>
-      <div class="num">06</div>
-      <h2>第三者への提供</h2>
-      <p>開発者は利用者の情報を販売せず、第三者へ提供いたしません。第3項の広告事業者を除き、情報を共有する先はありません。</p>
-    </section>
-
-    <section>
       <div class="num">07</div>
-      <h2>保管と削除</h2>
-      <p>端末内のゲームデータは、利用者が削除されるまで保管されます。ゲームの設定から進行を初期化されるか、端末からアプリを削除されると、保存されたデータも併せて削除されます。</p>
-      <p>セーブファイルを書き出された場合、そのファイルは利用者ご自身で保管・管理いただくものとなります。</p>
+      <h2>第三者への提供</h2>
+      <p>開発者は利用者の情報を販売せず、第三者へ提供いたしません。第4項の広告事業者（Google AdMob）と、ランキングの保存・運用のためのGoogle Firebaseを除き、情報を共有する先はありません。いずれも開発者に代わって処理を行うのみです。</p>
     </section>
 
     <section>
       <div class="num">08</div>
-      <h2>利用者の権利</h2>
-      <p>開発者は個人情報を保有していないため、開示・訂正・削除請求のための個別の手続きは設けておりません。広告に関して収集されるデータについては、上記Googleの方針に従い権利を行使いただけます。その他のお問い合わせは、下記のメールアドレスへお送りください。確認のうえご返信いたします。</p>
+      <h2>保管と削除</h2>
+      <p>端末内のゲームデータは、利用者が削除されるまで保管されます。ゲームの設定から進行を初期化されるか、端末からアプリを削除されると、保存されたデータも併せて削除されます。</p>
+      <p>セーブファイルを書き出された場合、そのファイルは利用者ご自身で保管・管理いただくものとなります。</p>
+      <p>ランキングに送信された記録は、その週が終わると集計から外れます。それ以前でも、ゲーム内の<em>レイド → 今週の順位 → 記録を削除</em>ボタンからいつでもご自身で削除いただけます。削除されると、ニックネームを含む当該記録はサーバーから直ちに消去されます。</p>
     </section>
 
     <section>
       <div class="num">09</div>
+      <h2>利用者の権利</h2>
+      <p>ランキングに送信された記録は、ゲーム内の<em>レイド → 今週の順位</em>画面でご確認いただけます。ニックネームを保存し直すことで訂正、<em>記録を削除</em>で削除いただけます。ランキングをご利用にならない場合、開発者が保有する個人情報はありません。広告に関して収集されるデータについては、上記Googleの方針に従い権利を行使いただけます。その他のお問い合わせは、下記のメールアドレスへお送りください。確認のうえご返信いたします。</p>
+    </section>
+
+    <section>
+      <div class="num">10</div>
       <h2>本ポリシーの変更</h2>
       <p>本ポリシーを変更する場合は、本書を更新し、冒頭の施行日も併せて改めます。重要な変更がある場合は、アプリのアップデート情報にてお知らせいたします。</p>
     </section>
 
     <section>
-      <div class="num">10</div>
+      <div class="num">11</div>
       <h2>お問い合わせ</h2>
       <p>本プライバシーポリシーに関するお問い合わせは、下記のメールアドレスへお願いいたします。</p>
       <p><a class="mail" href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
@@ -486,7 +534,7 @@
 <script>
   const META = {
     ko: { title: '4분할 원정대 개인정보처리방침', eff: '시행일 2026-08-30', copy: '전문 복사', done: '복사했습니다', fail: '복사 실패 — 직접 선택해 주세요', foot: '탭을 눌러 언어를 바꾸고, 전문 복사로 앱스토어에 붙여 넣으세요.' },
-    en: { title: 'Quadrant Expedition Privacy Policy', eff: 'Effective 2026-08-30', copy: 'Copy full text', done: 'Copied', fail: 'Copy failed — select it manually', foot: 'Switch languages with the tabs, then copy the full text for App Store Connect.' },
+    en: { title: 'Split Squad Privacy Policy', eff: 'Effective 2026-08-30', copy: 'Copy full text', done: 'Copied', fail: 'Copy failed — select it manually', foot: 'Switch languages with the tabs, then copy the full text for App Store Connect.' },
     ja: { title: '4分割遠征隊 プライバシーポリシー', eff: '施行日 2026-08-30', copy: '全文をコピー', done: 'コピーしました', fail: 'コピーに失敗しました — 手動で選択してください', foot: 'タブで言語を切り替え、全文をコピーしてApp Storeに貼り付けてください。' },
   };
   const LANGS = ['ko', 'en', 'ja'];
