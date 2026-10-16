@@ -1,114 +1,338 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farm Trade 개인정보처리방침</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f9f6f0;
-      color: #3a3530;
-      line-height: 1.7;
-      padding: 0 16px 60px;
-    }
-    header {
-      background: #a68a54;
-      color: #fff;
-      padding: 32px 24px 28px;
-      margin: 0 -16px 40px;
-    }
-    header h1 { font-size: 1.6rem; font-weight: 700; }
-    header p  { font-size: 0.9rem; opacity: 0.85; margin-top: 6px; }
-    .container { max-width: 720px; margin: 0 auto; }
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #a68a54;
-      border-left: 4px solid #a68a54;
-      padding-left: 12px;
-      margin: 36px 0 12px;
-    }
-    p { margin-bottom: 10px; font-size: 0.95rem; }
-    ul { margin: 8px 0 12px 20px; font-size: 0.95rem; }
-    ul li { margin-bottom: 6px; }
-    a { color: #a68a54; }
-    .card {
-      background: #fff;
-      border: 1px solid #e8dcc4;
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin-bottom: 12px;
-    }
-    .card strong { display: block; margin-bottom: 4px; }
-    .updated { font-size: 0.82rem; color: #8b7d6b; margin-top: 4px; }
-    footer { text-align: center; font-size: 0.82rem; color: #8b7d6b; margin-top: 48px; }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lazy Farm: Privacy Policy / 개인정보처리방침</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.7; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .meta { color: #666; font-size: 0.9rem; }
+  ul { padding-left: 1.2rem; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+  .tabs button { font: inherit; padding: 8px 16px; border: 1px solid #ccc; background: #f7f7f7;
+                 border-radius: 8px; cursor: pointer; color: #333; }
+  .tabs button.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  section { display: none; }
+  section.active { display: block; }
+</style>
 </head>
 <body>
-<header>
-  <div class="container">
-    <h1>🌾 Farm Trade</h1>
-    <p>개인정보처리방침 (Privacy Policy)</p>
-    <p class="updated">최종 업데이트: 2025년 5월 30일</p>
-  </div>
-</header>
-<div class="container">
-  <p>Farm Trade(이하 "앱")는 이용자의 개인정보를 소중히 여깁니다. 본 방침은 앱이 수집하는 정보, 사용 목적, 그리고 이용자의 권리에 대해 설명합니다.</p>
 
-  <h2>1. 수집하는 정보</h2>
-  <p>앱은 원활한 서비스 제공을 위해 아래와 같은 최소한의 정보를 수집합니다.</p>
-  <div class="card">
-    <strong>광고 식별자 (광고 ID / IDFA)</strong>
-    Google AdMob이 맞춤형 광고 제공 및 광고 성과 측정을 위해 기기의 광고 식별자를 수집할 수 있습니다. iOS 14.5 이상에서는 앱 추적 투명성(ATT) 동의 후에만 수집됩니다.
-  </div>
-  <div class="card">
-    <strong>게임 점수 및 닉네임</strong>
-    리더보드(순위) 기능 이용 시, 사용자가 직접 입력한 닉네임과 게임 점수가 서버에 저장됩니다.
-  </div>
-  <div class="card">
-    <strong>자동 수집 정보</strong>
-    앱 안정성 및 성능 개선을 위해 기기 정보(OS 버전, 기기 모델), 앱 충돌 로그 등이 자동으로 수집될 수 있습니다.
-  </div>
-
-  <h2>2. 수집 목적</h2>
-  <ul>
-    <li>광고 서비스 제공 (Google AdMob)</li>
-    <li>랭킹/리더보드 운영</li>
-    <li>앱 오류 분석 및 서비스 개선</li>
-  </ul>
-
-  <h2>3. 제3자 서비스</h2>
-  <p>앱은 아래 제3자 서비스를 사용하며, 각 서비스의 개인정보처리방침이 적용됩니다.</p>
-  <ul>
-    <li><strong>Google AdMob</strong> — <a href="https://policies.google.com/privacy" target="_blank">개인정보처리방침 보기</a></li>
-    <li><strong>Google Firebase</strong> (리더보드) — <a href="https://firebase.google.com/support/privacy" target="_blank">개인정보처리방침 보기</a></li>
-  </ul>
-
-  <h2>4. 정보 보유 기간</h2>
-  <p>수집된 정보는 서비스 제공 목적이 달성된 후 지체 없이 파기합니다. 리더보드 점수는 사용자 요청 시 삭제됩니다.</p>
-
-  <h2>5. 아동 개인정보 보호</h2>
-  <p>앱은 만 14세 미만 아동을 대상으로 고의적으로 개인정보를 수집하지 않습니다. 만약 아동의 정보가 수집된 사실을 알게 된 경우, 즉시 해당 정보를 삭제합니다.</p>
-
-  <h2>6. 이용자 권리</h2>
-  <ul>
-    <li>광고 추적 거부: iOS 설정 → 개인정보 보호 → 추적 → 앱 추적 허용 해제</li>
-    <li>리더보드 데이터 삭제 요청: 아래 연락처로 문의</li>
-  </ul>
-
-  <h2>7. 방침 변경</h2>
-  <p>본 개인정보처리방침은 법령 변경이나 서비스 변경 시 업데이트될 수 있습니다. 변경 시 앱 내 공지 또는 본 페이지를 통해 안내합니다.</p>
-
-  <h2>8. 문의</h2>
-  <p>개인정보 관련 문의사항은 아래 이메일로 연락해 주세요.</p>
-  <div class="card">
-    <strong>이메일</strong>
-    <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a>
-  </div>
-
-  <footer>&copy; 2025 Farm Trade. All rights reserved.</footer>
+<div class="tabs">
+  <button data-lang="ko">한국어</button>
+  <button data-lang="en">English</button>
+  <button data-lang="ja">日本語</button>
+  <button data-lang="zh-Hant">繁體中文</button>
+  <button data-lang="de">Deutsch</button>
+  <button data-lang="es">Español</button>
+  <button data-lang="fr">Français</button>
+  <button data-lang="pt">Português</button>
 </div>
+
+<section id="ko">
+<h1>개인정보처리방침</h1>
+<p class="meta">앱: Lazy Farm (누워서 농장), 시행일: 2026년 10월 16일</p>
+<p>본 방침은 모바일 게임 <strong>Lazy Farm</strong>(이하 "본 앱")이 이용자의 정보를 어떻게 처리하는지 설명합니다. 본 앱은 회원가입이나 이름, 이메일, 전화번호 등 개인을 직접 식별하는 정보를 요구하지 않습니다.</p>
+<h2>1. 수집하는 정보</h2>
+<ul>
+  <li><strong>게임 진행 데이터</strong>: 농장, 작물, 가축, 골드 등 진행 상황은 이용자 기기에만 저장됩니다.</li>
+  <li><strong>무작위 기기 ID</strong>: 앱을 처음 실행할 때 무작위 ID가 만들어집니다. 결제 확인과 구매 복원, 접속 통계에 쓰이며 이름이나 이메일과 연결되지 않습니다.</li>
+  <li><strong>구매 기록</strong>: 인앱 결제 시 구매한 상품과 거래 번호가 무작위 기기 ID와 함께 당사 서버(Cloudflare)에 저장됩니다. 카드 번호 등 결제 수단 정보는 App Store나 Google Play가 처리하며 본 앱은 받지 않습니다.</li>
+  <li><strong>광고 식별자</strong>: 광고 표시를 위해 Google AdMob이 기기 광고 식별자 등 정보를 수집할 수 있습니다. iOS에서는 앱 추적 허용에 동의한 경우에만 맞춤형 광고에 사용됩니다.</li>
+</ul>
+<h2>2. 정보의 이용 목적</h2>
+<ul>
+  <li>게임 진행 저장</li>
+  <li>인앱 결제 확인, 지급 및 구매 복원</li>
+  <li>시장 시세 등 온라인 기능 제공</li>
+  <li>보상형 광고 게재 및 서비스 운영과 개선</li>
+</ul>
+<h2>3. 제3자 서비스</h2>
+<p>본 앱은 다음 제3자 서비스를 사용하며, 각 서비스의 개인정보처리방침이 적용됩니다.</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. 광고 추적 거부</h2>
+<p>iOS: 설정 > 개인정보 보호 및 보안 > 추적에서 앱 추적을 끌 수 있습니다. Android: 설정 > 개인정보 보호 > 광고에서 광고 ID를 삭제하거나 재설정할 수 있습니다.</p>
+<h2>5. 데이터 보관 및 삭제</h2>
+<p>게임 진행 데이터는 앱 삭제 시 함께 삭제됩니다. 서버의 구매 기록은 구매 복원을 위해 보관되며, 삭제를 원하시면 아래 이메일로 요청해 주세요.</p>
+<h2>6. 아동</h2>
+<p>본 앱은 만 13세 미만 아동으로부터 개인을 식별하는 정보를 고의로 수집하지 않습니다.</p>
+<h2>7. 변경</h2>
+<p>본 방침은 변경될 수 있으며, 변경 시 본 페이지에 시행일과 함께 게시됩니다.</p>
+<h2>8. 문의</h2>
+<p>이메일: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="en">
+<h1>Privacy Policy</h1>
+<p class="meta">App: Lazy Farm, Effective date: October 16, 2026</p>
+<p>This policy explains how the mobile game <strong>Lazy Farm</strong> (the "App") handles your information. The App does not require sign-up or directly identifying information such as your name, email, or phone number.</p>
+<h2>1. Information We Collect</h2>
+<ul>
+  <li><strong>Game progress data</strong>: your farm, crops, animals, gold and progress are stored only on your device.</li>
+  <li><strong>Random device ID</strong>: a random ID is created the first time you open the App. It is used to verify and restore purchases and for usage statistics, and is not linked to your name or email.</li>
+  <li><strong>Purchase records</strong>: when you make an in-app purchase, the product and transaction ID are stored on our server (Cloudflare) together with the random device ID. Payment details such as card numbers are handled by the App Store or Google Play and are never received by the App.</li>
+  <li><strong>Advertising identifiers</strong>: Google AdMob may collect device advertising identifiers and related data to serve ads. On iOS they are used for personalized ads only if you allow tracking.</li>
+</ul>
+<h2>2. How We Use Information</h2>
+<ul>
+  <li>To save your game progress</li>
+  <li>To verify, deliver and restore in-app purchases</li>
+  <li>To provide online features such as market prices</li>
+  <li>To serve rewarded ads and operate/improve the service</li>
+</ul>
+<h2>3. Third-Party Services</h2>
+<p>The App uses the following third-party services, each governed by its own privacy policy:</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. Opting Out of Ad Tracking</h2>
+<p>iOS: Settings > Privacy & Security > Tracking. Android: Settings > Privacy > Ads, where you can delete or reset your advertising ID.</p>
+<h2>5. Data Retention & Deletion</h2>
+<p>Game progress data is removed when you delete the App. Purchase records on our server are kept so purchases can be restored; to request deletion, email us below.</p>
+<h2>6. Children</h2>
+<p>The App does not knowingly collect personally identifying information from children under 13.</p>
+<h2>7. Changes</h2>
+<p>This policy may change. Changes will be posted on this page with a new effective date.</p>
+<h2>8. Contact</h2>
+<p>Email: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="ja">
+<h1>プライバシーポリシー</h1>
+<p class="meta">アプリ: Lazy Farm, 施行日: 2026年10月16日</p>
+<p>本ポリシーは、モバイルゲーム<strong>Lazy Farm</strong>（以下「本アプリ」）がユーザー情報をどのように取り扱うかを説明します。本アプリは会員登録や氏名・メールアドレス・電話番号など個人を直接特定する情報を求めません。</p>
+<h2>1. 収集する情報</h2>
+<ul>
+  <li><strong>ゲーム進行データ</strong>：農場、作物、動物、ゴールドなどの進行状況は端末内にのみ保存されます。</li>
+  <li><strong>ランダムな端末ID</strong>：初回起動時にランダムなIDが作成されます。購入の確認と復元、利用統計に使用され、氏名やメールアドレスとは結び付きません。</li>
+  <li><strong>購入履歴</strong>：アプリ内課金の際、購入した商品と取引番号がランダムな端末IDとともに当社サーバー（Cloudflare）に保存されます。カード番号などの決済情報はApp Store・Google Playが処理し、本アプリは受け取りません。</li>
+  <li><strong>広告識別子</strong>：広告表示のためGoogle AdMobが端末の広告識別子などを収集する場合があります。iOSではトラッキングを許可した場合のみパーソナライズ広告に使用されます。</li>
+</ul>
+<h2>2. 利用目的</h2>
+<ul>
+  <li>ゲーム進行の保存</li>
+  <li>アプリ内課金の確認・付与・復元</li>
+  <li>相場などのオンライン機能の提供</li>
+  <li>リワード広告の配信およびサービスの運営・改善</li>
+</ul>
+<h2>3. 第三者サービス</h2>
+<p>本アプリは以下の第三者サービスを使用しており、各サービスのプライバシーポリシーが適用されます。</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. 広告トラッキングの拒否</h2>
+<p>iOS：設定 > プライバシーとセキュリティ > トラッキング。Android：設定 > プライバシー > 広告 で広告IDを削除・リセットできます。</p>
+<h2>5. データの保管と削除</h2>
+<p>ゲーム進行データはアプリ削除時に削除されます。サーバー上の購入履歴は購入復元のため保管され、削除をご希望の場合は下記メールまでご連絡ください。</p>
+<h2>6. 子ども</h2>
+<p>本アプリは13歳未満の子どもから個人を特定する情報を意図的に収集しません。</p>
+<h2>7. 変更</h2>
+<p>本ポリシーは変更される場合があり、変更時は本ページに施行日とともに掲載します。</p>
+<h2>8. お問い合わせ</h2>
+<p>メール: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="zh-Hant">
+<h1>隱私權政策</h1>
+<p class="meta">應用程式：Lazy Farm, 生效日期：2026年10月16日</p>
+<p>本政策說明行動遊戲<strong>Lazy Farm</strong>（以下稱「本應用程式」）如何處理您的資訊。本應用程式不需要註冊，也不要求姓名、電子郵件或電話號碼等可直接識別個人的資訊。</p>
+<h2>1. 我們收集的資訊</h2>
+<ul>
+  <li><strong>遊戲進度資料</strong>：農場、作物、動物、金幣等進度僅儲存在您的裝置上。</li>
+  <li><strong>隨機裝置ID</strong>：首次開啟時會建立隨機ID，用於確認與恢復購買及使用統計，不會與您的姓名或電子郵件連結。</li>
+  <li><strong>購買紀錄</strong>：進行應用程式內購買時，購買的商品與交易編號會與隨機裝置ID一起儲存在我們的伺服器（Cloudflare）。信用卡號等付款資訊由 App Store 或 Google Play 處理，本應用程式不會取得。</li>
+  <li><strong>廣告識別碼</strong>：Google AdMob 可能為顯示廣告而收集裝置廣告識別碼等資訊。在 iOS 上僅在您允許追蹤時用於個人化廣告。</li>
+</ul>
+<h2>2. 資訊的使用目的</h2>
+<ul>
+  <li>儲存遊戲進度</li>
+  <li>確認、發放及恢復應用程式內購買</li>
+  <li>提供行情等線上功能</li>
+  <li>投放獎勵廣告及營運、改善服務</li>
+</ul>
+<h2>3. 第三方服務</h2>
+<p>本應用程式使用下列第三方服務，並適用各服務的隱私權政策：</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. 拒絕廣告追蹤</h2>
+<p>iOS：設定 > 隱私權與安全性 > 追蹤。Android：設定 > 隱私權 > 廣告，可刪除或重設廣告ID。</p>
+<h2>5. 資料保存與刪除</h2>
+<p>遊戲進度資料會在刪除本應用程式時一併刪除。伺服器上的購買紀錄會為恢復購買而保存，如需刪除請寄信至下方信箱。</p>
+<h2>6. 兒童</h2>
+<p>本應用程式不會刻意向未滿13歲的兒童收集可識別個人的資訊。</p>
+<h2>7. 變更</h2>
+<p>本政策可能變更，變更時將連同生效日期公告於本頁。</p>
+<h2>8. 聯絡我們</h2>
+<p>電子郵件: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="de">
+<h1>Datenschutzerklärung</h1>
+<p class="meta">App: Lazy Farm, Gültig ab: 16. Oktober 2026</p>
+<p>Diese Erklärung beschreibt, wie das Mobile Game <strong>Lazy Farm</strong> (die „App“) mit deinen Daten umgeht. Die App erfordert keine Registrierung und keine direkt identifizierenden Daten wie Name, E-Mail oder Telefonnummer.</p>
+<h2>1. Erhobene Daten</h2>
+<ul>
+  <li><strong>Spielfortschritt</strong>: Hof, Pflanzen, Tiere, Gold und Fortschritt werden nur auf deinem Gerät gespeichert.</li>
+  <li><strong>Zufällige Geräte-ID</strong>: Beim ersten Start wird eine zufällige ID erstellt. Sie dient der Prüfung und Wiederherstellung von Käufen sowie Nutzungsstatistiken und ist nicht mit Name oder E-Mail verknüpft.</li>
+  <li><strong>Kaufdaten</strong>: Bei In-App-Käufen werden Produkt und Transaktionsnummer zusammen mit der zufälligen Geräte-ID auf unserem Server (Cloudflare) gespeichert. Zahlungsdaten wie Kartennummern verarbeiten App Store bzw. Google Play; die App erhält sie nie.</li>
+  <li><strong>Werbe-IDs</strong>: Google AdMob kann Werbe-IDs des Geräts und ähnliche Daten erheben, um Werbung anzuzeigen. Unter iOS nur für personalisierte Werbung, wenn du Tracking erlaubst.</li>
+</ul>
+<h2>2. Verwendungszwecke</h2>
+<ul>
+  <li>Spielfortschritt speichern</li>
+  <li>In-App-Käufe prüfen, gutschreiben und wiederherstellen</li>
+  <li>Online-Funktionen wie Marktpreise bereitstellen</li>
+  <li>Belohnungswerbung anzeigen sowie den Dienst betreiben und verbessern</li>
+</ul>
+<h2>3. Dienste Dritter</h2>
+<p>Die App nutzt folgende Dienste Dritter, für die jeweils deren eigene Datenschutzerklärung gilt:</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. Werbe-Tracking ablehnen</h2>
+<p>iOS: Einstellungen > Datenschutz & Sicherheit > Tracking. Android: Einstellungen > Datenschutz > Werbung, dort kannst du die Werbe-ID löschen oder zurücksetzen.</p>
+<h2>5. Speicherung und Löschung</h2>
+<p>Spieldaten werden beim Löschen der App entfernt. Kaufdaten auf unserem Server bleiben zur Wiederherstellung von Käufen erhalten; für eine Löschung schreib uns per E-Mail.</p>
+<h2>6. Kinder</h2>
+<p>Die App erhebt wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren.</p>
+<h2>7. Änderungen</h2>
+<p>Diese Erklärung kann sich ändern. Änderungen werden hier mit neuem Gültigkeitsdatum veröffentlicht.</p>
+<h2>8. Kontakt</h2>
+<p>E-Mail: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="es">
+<h1>Política de privacidad</h1>
+<p class="meta">App: Lazy Farm, Fecha de entrada en vigor: 16 de octubre de 2026</p>
+<p>Esta política explica cómo el juego móvil <strong>Lazy Farm</strong> (la "App") trata tu información. La App no requiere registro ni datos que te identifiquen directamente, como nombre, correo o teléfono.</p>
+<h2>1. Información que recopilamos</h2>
+<ul>
+  <li><strong>Progreso del juego</strong>: tu granja, cultivos, animales, oro y progreso se guardan solo en tu dispositivo.</li>
+  <li><strong>ID aleatorio del dispositivo</strong>: al abrir la App por primera vez se crea un ID aleatorio. Se usa para verificar y restaurar compras y para estadísticas de uso, y no está vinculado a tu nombre ni correo.</li>
+  <li><strong>Registros de compra</strong>: al hacer una compra dentro de la App, el producto y el número de transacción se guardan en nuestro servidor (Cloudflare) junto con el ID aleatorio. Los datos de pago, como el número de tarjeta, los gestionan App Store o Google Play y la App nunca los recibe.</li>
+  <li><strong>Identificadores publicitarios</strong>: Google AdMob puede recopilar el identificador publicitario del dispositivo y datos relacionados para mostrar anuncios. En iOS solo se usan para anuncios personalizados si permites el rastreo.</li>
+</ul>
+<h2>2. Uso de la información</h2>
+<ul>
+  <li>Guardar el progreso del juego</li>
+  <li>Verificar, entregar y restaurar compras dentro de la App</li>
+  <li>Ofrecer funciones en línea como los precios del mercado</li>
+  <li>Mostrar anuncios con recompensa y operar y mejorar el servicio</li>
+</ul>
+<h2>3. Servicios de terceros</h2>
+<p>La App usa los siguientes servicios de terceros, cada uno con su propia política de privacidad:</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. Rechazar el seguimiento publicitario</h2>
+<p>iOS: Ajustes > Privacidad y seguridad > Rastreo. Android: Ajustes > Privacidad > Anuncios, donde puedes eliminar o restablecer tu ID de publicidad.</p>
+<h2>5. Conservación y eliminación</h2>
+<p>Los datos del juego se eliminan al borrar la App. Los registros de compra en nuestro servidor se conservan para poder restaurar compras; para solicitar su eliminación, escríbenos.</p>
+<h2>6. Menores</h2>
+<p>La App no recopila a sabiendas información de identificación personal de menores de 13 años.</p>
+<h2>7. Cambios</h2>
+<p>Esta política puede cambiar. Los cambios se publicarán en esta página con una nueva fecha.</p>
+<h2>8. Contacto</h2>
+<p>Correo electrónico: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="fr">
+<h1>Politique de confidentialité</h1>
+<p class="meta">Application : Lazy Farm, En vigueur le 16 octobre 2026</p>
+<p>Cette politique explique comment le jeu mobile <strong>Lazy Farm</strong> (l’« Application ») traite tes informations. L’Application ne demande ni inscription ni information t’identifiant directement, comme ton nom, ton e-mail ou ton numéro de téléphone.</p>
+<h2>1. Informations collectées</h2>
+<ul>
+  <li><strong>Progression du jeu</strong> : ta ferme, tes cultures, tes animaux, ton or et ta progression sont enregistrés uniquement sur ton appareil.</li>
+  <li><strong>Identifiant aléatoire de l’appareil</strong> : un identifiant aléatoire est créé au premier lancement. Il sert à vérifier et restaurer les achats et aux statistiques d’utilisation, et n’est lié ni à ton nom ni à ton e-mail.</li>
+  <li><strong>Historique d’achats</strong> : lors d’un achat intégré, le produit et le numéro de transaction sont enregistrés sur notre serveur (Cloudflare) avec l’identifiant aléatoire. Les données de paiement, comme le numéro de carte, sont gérées par l’App Store ou Google Play et ne sont jamais reçues par l’Application.</li>
+  <li><strong>Identifiants publicitaires</strong> : Google AdMob peut collecter l’identifiant publicitaire de l’appareil et des données associées pour afficher des publicités. Sur iOS, ils ne servent aux publicités personnalisées que si tu autorises le suivi.</li>
+</ul>
+<h2>2. Utilisation des informations</h2>
+<ul>
+  <li>Enregistrer ta progression</li>
+  <li>Vérifier, livrer et restaurer les achats intégrés</li>
+  <li>Fournir des fonctions en ligne comme les cours du marché</li>
+  <li>Afficher des publicités récompensées et exploiter/améliorer le service</li>
+</ul>
+<h2>3. Services tiers</h2>
+<p>L’Application utilise les services tiers suivants, chacun régi par sa propre politique de confidentialité :</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. Refuser le suivi publicitaire</h2>
+<p>iOS : Réglages > Confidentialité et sécurité > Suivi. Android : Paramètres > Confidentialité > Annonces, pour supprimer ou réinitialiser ton identifiant publicitaire.</p>
+<h2>5. Conservation et suppression</h2>
+<p>Les données de jeu sont supprimées avec l’Application. L’historique d’achats sur notre serveur est conservé pour permettre la restauration des achats ; pour demander sa suppression, écris-nous.</p>
+<h2>6. Enfants</h2>
+<p>L’Application ne collecte pas sciemment d’informations personnelles auprès d’enfants de moins de 13 ans.</p>
+<h2>7. Modifications</h2>
+<p>Cette politique peut être modifiée. Les changements seront publiés sur cette page avec une nouvelle date.</p>
+<h2>8. Contact</h2>
+<p>E-mail: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+<section id="pt">
+<h1>Política de Privacidade</h1>
+<p class="meta">App: Lazy Farm, Vigência: 16 de outubro de 2026</p>
+<p>Esta política explica como o jogo para celular <strong>Lazy Farm</strong> (o "App") trata suas informações. O App não exige cadastro nem dados que identifiquem você diretamente, como nome, e-mail ou telefone.</p>
+<h2>1. Informações coletadas</h2>
+<ul>
+  <li><strong>Progresso do jogo</strong>: sua fazenda, plantações, animais, ouro e progresso ficam salvos apenas no seu aparelho.</li>
+  <li><strong>ID aleatório do aparelho</strong>: um ID aleatório é criado na primeira vez que você abre o App. Ele é usado para verificar e restaurar compras e para estatísticas de uso, e não é vinculado ao seu nome ou e-mail.</li>
+  <li><strong>Registros de compra</strong>: ao fazer uma compra no App, o produto e o número da transação são salvos no nosso servidor (Cloudflare) junto com o ID aleatório. Dados de pagamento, como o número do cartão, são tratados pela App Store ou pelo Google Play e nunca chegam ao App.</li>
+  <li><strong>Identificadores de publicidade</strong>: o Google AdMob pode coletar o identificador de publicidade do aparelho e dados relacionados para exibir anúncios. No iOS, só são usados para anúncios personalizados se você permitir o rastreamento.</li>
+</ul>
+<h2>2. Uso das informações</h2>
+<ul>
+  <li>Salvar o progresso do jogo</li>
+  <li>Verificar, entregar e restaurar compras no App</li>
+  <li>Oferecer recursos on-line como os preços do mercado</li>
+  <li>Exibir anúncios premiados e operar/melhorar o serviço</li>
+</ul>
+<h2>3. Serviços de terceiros</h2>
+<p>O App usa os seguintes serviços de terceiros, cada um com sua própria política de privacidade:</p>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<h2>4. Recusar o rastreamento de anúncios</h2>
+<p>iOS: Ajustes > Privacidade e Segurança > Rastreamento. Android: Configurações > Privacidade > Anúncios, onde é possível excluir ou redefinir o ID de publicidade.</p>
+<h2>5. Retenção e exclusão</h2>
+<p>Os dados do jogo são removidos ao excluir o App. Os registros de compra no nosso servidor são mantidos para permitir a restauração de compras; para pedir a exclusão, envie um e-mail.</p>
+<h2>6. Crianças</h2>
+<p>O App não coleta intencionalmente informações de identificação pessoal de crianças menores de 13 anos.</p>
+<h2>7. Alterações</h2>
+<p>Esta política pode mudar. As alterações serão publicadas nesta página com a nova data.</p>
+<h2>8. Contato</h2>
+<p>E-mail: <a href="mailto:doggguggu@gmail.com">doggguggu@gmail.com</a></p>
+</section>
+
+<script>
+  var btns = document.querySelectorAll('.tabs button');
+  function show(lang) {
+    document.querySelectorAll('section').forEach(function (s) { s.classList.toggle('active', s.id === lang); });
+    btns.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+    document.documentElement.lang = lang;
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+  var nav = (navigator.language || 'en').toLowerCase();
+  var codes = ['ko', 'ja', 'de', 'es', 'fr', 'pt'];
+  var pick = nav.indexOf('zh') === 0 ? 'zh-Hant' : (codes.filter(function (c) { return nav.indexOf(c) === 0; })[0] || 'ko');
+  show(pick);
+</script>
+
 </body>
 </html>
